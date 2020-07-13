@@ -23,7 +23,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,7 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+nav a{
+    text-decoration: none;
+    margin-top: 3%;
+}
 header {
     background-color:lightgrey;
     font-size: 21px;
@@ -58,6 +61,7 @@ header {
 }
 h1 {
     color:green;
+    font-size: 3rem;
 }
 .main {
     display: flex;
@@ -111,4 +115,134 @@ footer a {
     width:20%;
     padding: 1%;
     margin:2%
+}
+
+
+/*Media queries */
+
+@media(max-width:800px){
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    nav a{
+        text-decoration: none;
+        border: solid black 2px;
+        padding: 3%;
+        text-align: center;
+    }
+    nav #homebutton{
+        background-color: black;
+        color: white;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin: 3%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .desc h2{
+        padding: 4%;
+        font-size: 2rem;
+    }
+    .gallery1{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .gallery1 div{
+       width: 40%;
+       margin: 5%
+    }
+    .gallery2{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .gallery2 div{
+       width: 40%;
+       margin: 5%;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    nav a{
+        text-decoration: none;
+        border: solid black 2px;
+        padding: 3%;
+        text-align: center;
+    }
+    nav #homebutton{
+        background-color: black;
+        color: white;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin: 3%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .desc h2{
+        padding: 4%;
+        font-size: 2rem;
+    }
+    .gallery1{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .gallery1 div{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+    }
+    .gallery2{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .gallery2 div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
